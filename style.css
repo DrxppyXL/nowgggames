@@ -1,5 +1,6 @@
 :root {
-    --accent_color: rgb(255, 66, 165)
+    --accent_color: rgb(255, 66, 165);
+    --selected_color: #262626;
 }
 
 body {
@@ -30,10 +31,6 @@ body {
     text-transform: capitalize;
 }
 
-.gameoption:first-letter {
-    text-decoration: underline;
-}
-
 select {
     color: var(--accent_color);
     background-color: #000000;
@@ -42,6 +39,7 @@ select {
     height: 100px;
     font-size: xx-large;
     text-align: center;
+    border: var(--accent_color);
 }
 
 .SubmitButton {
@@ -54,5 +52,11 @@ select {
     cursor: pointer;
     display: block;
     width: 100%;
-    height: 100px;
+    height: 20%;
+    font-size: xx-large;
+}
+
+.SubmitButton:hover {
+    text-decoration: underline;
+    background-color: var(--selected_color);
 }
